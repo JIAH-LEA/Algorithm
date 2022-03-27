@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class boj15651 {
+public class BOJ15651 {
     static int M, N;
     static int[] arr;
     static StringBuilder sb = new StringBuilder();
