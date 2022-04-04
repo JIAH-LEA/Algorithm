@@ -30,7 +30,7 @@ public class BOJ14719 {
         for( int j = 1; j < W-1; j++ ) {
             left = right = 0;
 
-            // 각 block 기준 왼쪽의 max와 오른쪽의 max 값 중 min 값 만큼의 양이 채워진다
+            // 각 block 기준 왼쪽의 max와 오른쪽의 max 값 중 min 값 높이까지만, 양이 채워진다
             for( int k = 0; k < j; k++ ) {
                 left = Math.max(block[k], left);
             }
