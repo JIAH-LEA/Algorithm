@@ -1,3 +1,8 @@
+package BOJ;
+
+// 1932 - 정수 삼각형
+// 실버1 - 다이나믹 프로그래밍
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,7 +15,7 @@ public class BOJ1932 {
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = null;
+		StringTokenizer st;
 		
 		N = Integer.parseInt(br.readLine());
 		
@@ -31,11 +36,11 @@ public class BOJ1932 {
 			}
 		}
 		
-		int answer = 0;
+		int result = 0;
 		for (int i = 1; i <= N; ++i) {
-			answer = (answer < d[N][i]) ? d[N][i] : answer;
+			result = (result < d[N][i]) ? d[N][i] : result;
 		}
-		
-		System.out.println(answer);
+
+		System.out.println(result);
 	}
 }
