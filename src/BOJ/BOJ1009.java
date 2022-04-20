@@ -1,3 +1,7 @@
+package BOJ;
+
+// 1009 - 분산 처리
+// 브론즈3 - 수학, 구현
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,7 +19,7 @@ public class BOJ1009 {
         int t = Integer.parseInt(br.readLine());
         
         for(int i = 0; i < t; i++) {
-            StringTokenizer st = new StringTokenizer(bf.readLine()," ");
+            StringTokenizer st = new StringTokenizer(br.readLine()," ");
             
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
