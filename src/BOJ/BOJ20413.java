@@ -1,5 +1,8 @@
 package BOJ;
 
+// 20413 - MVP다이아몬드
+// 실버2 - 그리디 알고리즘
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
