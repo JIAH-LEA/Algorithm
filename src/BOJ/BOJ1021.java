@@ -1,3 +1,5 @@
+package BOJ; 
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -24,14 +26,14 @@ public class BOJ1021 {
         int ans = 0;
         for(int i = 0; i < m; i++) {
             int targetIdx = list.indexOf(arr[i]);
-            if(targetIdx < list.size() - targetIdx) {  // 오른쪽이동 < 왼쪽 이동
+            if(targetIdx < list.size() - targetIdx) {  
                 for(int j = 0; j < targetIdx; j++) {
                     list.add(list.remove(0));
                     ans += 1;
                 }
             }else {
                 for(int j = 0; j < list.size()-targetIdx; j++) {
-                    list.add(0, list.remove(list.size() - 1));  // 마지막 인덱스를 0번에 놓음
+                    list.add(0, list.remove(list.size() - 1));  
                     ans += 1;
                 }
             }
